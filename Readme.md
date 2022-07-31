@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Алексей Рожнов](https://up.htmlacademy.ru/adaptive/26/user/2042045).
-* Наставник: `Руслан Бреев`.
+* Наставник: [Руслан Бреев]. (https://htmlacademy.ru/profile/blckwltz)
 
 ---
 
