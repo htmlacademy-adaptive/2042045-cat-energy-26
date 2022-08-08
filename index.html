@@ -8,13 +8,15 @@
 
 <body>
     <header>
-        <img src="source/img/logo-mobile.svg">
-        <ul>
-            <li><a href="#">главная</a></li>
-            <li><a href="#">каталог продукции</a></li>
-            <li><a href="#">подбор программы</a></li>
-        </ul>
-        <button type="button">Открыть меню</button>
+        <a href="index.html"><img src="source/img/logo-mobile.svg"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">главная</a></li>
+                <li><a href="catalog.html">каталог продукции</a></li>
+                <li><a href="form.html">подбор программы</a></li>
+            </ul>
+            <button type="button">Открыть меню</button>
+        </nav>
     </header>
     <main>
         <div>
@@ -23,72 +25,80 @@
             <img src="source/img/prime-image.png">
             <a href="#">подобрать программу</a>
         </div>
-        <div>
-            <img src="source/img/cat-slim.svg">
-            <h2>Похудение</h2>
-            <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy
-                Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a href="#">
-                <p>каталог slim<img src="source/img/right-pointer.svg"></p>
-            </a>
-        </div>
-        <div>
-            <img src="source/img/cat-pro.svg">
-            <h2>Набор массы</h2>
-            <p>Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту
-                нарастить необходимые мышцы!</p>
-            <a href="#">
-                <p>каталог pro<img src="source/img/right-pointer.svg"></p>
-            </a>
-        </div>
-        <div>
+        <section>
+            <div>
+                <h2>Похудение</h2>
+                <p>Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy
+                    Slim поможет вашему питомцу сбросить лишний вес.</p>
+                <a href="#">каталог slim</a>
+            </div>
+            <div>
+                <h2>Набор массы</h2>
+                <p>Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту
+                    нарастить необходимые мышцы!</p>
+                <a href="#">каталог pro</a>
+            </div>
+        </section>
+        <section>
             <ul>
                 <h2>Как это работает</h2>
-                <li><img src="source/img/natural.svg">
+                <li>
                     <p>Функциональное питание содержит только полезные питательные вещества.</p>
                 </li>
-                <li><img src="source/img/water.svg">
+                <li>
                     <p>Выпускается в виде порошка, nкоторый нужно лишь залить кипятком и готово.</p>
                 </li>
-                <li><img src="source/img/eat.svg">
+                <li>
                     <p>Замените один-два приема обычной еды на наше функциональное питание.</p>
                 </li>
-                <li><img src="source/img/clock.svg">
+                <li>
                     <p>Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
                 </li>
             </ul>
-        </div>
-        <div>
+        </section>
+        <section>
             <h2>Живой пример</h2>
             <p>Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат
                 без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
             </p>
-            <div>
-                <h3>5 КГ</h3>
-                <p>снижение веса</p>
-            </div>
-            <div>
-                <h3>60 ДНЕЙ</h3>
-                <p>затрачено времени</p>
-            </div>
+            <dl>
+                <div>
+                    <dt></dt><h3>5 КГ</h3></dt>
+                    <dd><p>снижение веса</p></dd>
+                </div>
+                <div>
+                    <dt><h3>60 ДНЕЙ</h3></dt>
+                    <dd><p>затрачено времени</p></dd>
+                </div>
+            </dl>
             <p>Затраты на питание: 15 000 РУБ. </p>
             <img src="source/img/fat-cat.png">
-        </div>
-        <div>
+            <img src="source/img/skinny-cat.png">
+            <div>
+            <button type="button">Было</button>
+                <input type="range" min="0" max="1" value="1" class="slider" id="myRange">
+                <button type="button">Стало</button>
+              </div>
+        </section>
+        <section>
             <h2>приглашаем к сотрудничеству дилеров!</h2>
             <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        </div>
-        <div>
+        </section>
+        <section>
             <img src="source/img/map.png">
-        </div>
+        </section>
     </main>
     <footer>
-<a href="#"><img src="source/img/footer-logo.svg"></a>
-<a href="#"><img src="source/img/vk.svg"></a>
-<a href="#"><img src="source/img/youtube.svg"></a>
-<a href="#"><img src="source/img/telegram.svg"></a>
-<a href=""><p>HTML Academy</p></a>
-<a href="#"><img src="source/img/html-academy-logo.svg"></a>
+        <a href="#"><img src="source/img/footer-logo.svg"></a>\
+        <ul>
+            <li><a href="#"><img src="source/img/vk.svg"></a></li>
+            <li><a href="#"><img src="source/img/youtube.svg"></a></li>
+            <li><a href="#"><img src="source/img/telegram.svg"></a></li>
+        </ul>
+        <a href="">
+            <p>HTML Academy</p>
+        </a>
+        <a href="#"><img src="source/img/html-academy-logo.svg"></a>
     </footer>
 </body>
 
