@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Каталог здорового питанияы</title>
+    <title>Заполните анкету</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html"><img src="source/img/logo-mobile.svg"></a>
+        <a href="index.html"><img src="img/logo-mobile.svg"></a>
         <nav>
             <ul>
                 <li><a href="index.html">главная</a></li>
@@ -19,27 +19,65 @@
         </nav>
     </header>
     <main>
-
-    </main>
-    <section>
-        <h2>приглашаем к сотрудничеству дилеров!</h2>
-        <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-    </section>
-    <section>
-        <img src="source/img/map.png">
-    </section>
+        <h1>Подбор программы</h1>
+        <h2>Заполните анкету, и мы подберем
+            программу питания для вашего кота</h2>
+            <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <div>
+                ИМЯ:*<input type="text" name="name" required>
+                Вес (кг):*<input type="text" name="weight" required>
+        </div>
+        <fieldset>
+            <ul>
+                <li><label class=""><input type="radio" name="less" checked="checked">похудение</label></li>
+                <li><label class=""><input type="radio" name="more">Набор массы</label></li>
+                <li><label class=""><input type="radio" name="unknown">Не знаю (Нужен ваш совет)</label></li>
+            </ul>
+        </fieldset>
+        <div>
+            <h2>
+                Контактные данные (владельца кота)
+            </h2>
+            <label for="email">E-mail:*</label>
+            <input type="email" name="email" required>
+            <label for="tel">Телефон:*</label>
+            <input type="tel" name="tel" required>
+        </div>
+        <div>
+            <h2>Комментарий</h2>
+            <label for="text"></label>
+            <textarea id="text" name="comments" rows="10">Расскажите обо всех повадках кота</textarea>
+        </div>
+        <div>
+            <h2>Дополнительно</h2>
+            <ul>
+                <li><label class=""><input type="checkbox" name="sweetener" checked="checked">сахарозаменитель</label></li>
+                <li><label class=""><input type="checkbox" name="water">питьевая вода</label></li>
+                <li><label class=""><input type="checkbox" name="milk">молоко</label></li>
+                <li><label class=""><input type="checkbox" name="vitamins">витамины</label></li>
+            </ul>
+        </div>
+        <input type="submit" value="отправить заявку"><p>* — Обязательные поля</p>
+    </form>
+        <section>
+            <h2>приглашаем к сотрудничеству дилеров!</h2>
+            <p>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </section>
+        <section>
+            <img src="img/map.png">
+        </section>
     </main>
     <footer>
-        <a href="#"><img src="source/img/footer-logo.svg"></a>\
+        <a href="#"><img src="img/footer-logo.svg"></a>\
         <ul>
-            <li><a href="#"><img src="source/img/vk.svg"></a></li>
-            <li><a href="#"><img src="source/img/youtube.svg"></a></li>
-            <li><a href="#"><img src="source/img/telegram.svg"></a></li>
+            <li><a href="https://vk.com/htmlacademy"><img src="img/vk.svg"></a></li>
+            <li><a href="https://www.youtube.com/user/htmlacademyru"><img src="img/youtube.svg"></a></li>
+            <li><a href="https://t.me/htmlacademy"><img src="img/telegram.svg"></a></li>
         </ul>
-        <a href="">
+        <a href="https://htmlacademy.ru/">
             <p>HTML Academy</p>
         </a>
-        <a href="#"><img src="source/img/html-academy-logo.svg"></a>
+        <a href="https://htmlacademy.ru/"><img src="img/html-academy-logo.svg"></a>
     </footer>
 </body>
 
