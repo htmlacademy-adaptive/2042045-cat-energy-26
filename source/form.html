@@ -59,11 +59,10 @@
                 <label class="contact-owner__tel" for="tel">Телефон:*</label>
                 <input type="tel" name="tel" required>
             </div>
-            <div class="comment">
+            <div class="">
                 <h2 class="comment__title">Комментарий</h2>
                 <label for="text"></label>
-                <textarea class="comment__text" id="text" name="comments"
-                    rows="10">Расскажите обо всех повадках кота</textarea>
+                <textarea class="comment__text" id="text" name="comments">Расскажите обо всех повадках кота</textarea>
             </div>
             <div class="additionally">
                 <h2 class="additionally__title">Дополнительно</h2>
@@ -90,8 +89,10 @@
                     </li>
                 </ul>
             </div>
-            <input class="send-request" type="submit" value="отправить заявку">
-            <p class="Required">* — Обязательные поля</p>
+            <div class="send">
+              <input class="send-request" type="submit" value="отправить заявку">
+              <p class="send-required">* — Обязательные поля</p>
+            </div>
         </form>
         <section class="cooperation">
             <h2 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h2>
