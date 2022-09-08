@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Интернет магазин здорового питания для котов</title>
-    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body class="page__body">
@@ -14,21 +14,21 @@
         </a>
         <nav class="main-nav">
             <div class="main-nav__wrapper">
-               <ul class="main-nav__list site-list">
-                 <li class="site-list__item"><a class="site-list__decoration" href="index.html">главная</a></li>
-                 <li class="site-list__item"><a class="site-list__decoration" href="catalog.html">каталог продукции</a></li>
-                 <li class="site-list__item site-list__item--active"><a class="site-list__decoration" href="form.html">подбор программы</a></li>
-               </ul>
+
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item"><a href="index.html">главная</a></li>
+                    <li class="site-list__item"><a href="catalog.html">каталог продукции</a></li>
+                    <li class="site-list__item site-list__item--active"></li><a href="form.html">подбор программы</a>
+                    </li>
+                </ul>
             </div>
             <button class="main-nav__toggle" type="button">Открыть меню</button>
         </nav>
     </header>
     <main class="main-container">
-      <div class="questionnaire">
-        <h1 class="questionnaire-title">Подбор программы</h1>
-        <h2 class="questionnaire-filler">Заполните анкету, и мы подберем
+        <h1 class="visually-hidden">Подбор программы</h1>
+        <h2 class="main-title">Заполните анкету, и мы подберем
             программу питания для вашего кота</h2>
-      </div>
         <form action="https://echo.htmlacademy.ru/courses" method="post">
             <div class="pet-data">
                 ИМЯ:*<input class="pet-data__name" type="text" name="name" required>
@@ -59,10 +59,11 @@
                 <label class="contact-owner__tel" for="tel">Телефон:*</label>
                 <input type="tel" name="tel" required>
             </div>
-            <div class="">
+            <div class="comment">
                 <h2 class="comment__title">Комментарий</h2>
                 <label for="text"></label>
-                <textarea class="comment__text" id="text" name="comments">Расскажите обо всех повадках кота</textarea>
+                <textarea class="comment__text" id="text" name="comments"
+                    rows="10">Расскажите обо всех повадках кота</textarea>
             </div>
             <div class="additionally">
                 <h2 class="additionally__title">Дополнительно</h2>
@@ -89,10 +90,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="send">
-              <input class="send-request" type="submit" value="отправить заявку">
-              <p class="send-required">* — Обязательные поля</p>
-            </div>
+            <input class="send-request" type="submit" value="отправить заявку">
+            <p class="Required">* — Обязательные поля</p>
         </form>
         <section class="cooperation">
             <h2 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h2>
@@ -101,30 +100,31 @@
         </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__social">
-          <a class="" href="#"><img src="img/footer-logo.svg"></a>
-          <ul class="social__list">
-              <li class="social__item">
-                  <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                      <img src="img/vk.svg">
-                  </a>
-              </li>
-              <li class="social__item">
-                  <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                      <img src="img/youtube.svg">
-                  </a>
-              </li>
-              <li class="social__item">
-                  <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                      <img src="img/telegram.svg">
-                  </a>
-              </li>
-          </ul>
-          <a class="main-footer__logo" href="https://htmlacademy.ru/">
-              <p>HTML Academy</p>
-          </a>
-          <a class="main-footer__icon" href="https://htmlacademy.ru/"><img src="img/html-academy-logo.svg"></a>
-      </div>
-  </footer>
+        <div class="main-footer__social">
+            <a class="" href="#"><img src="img/footer-logo.svg"></a>
+            <ul class="social__list">
+                <li class="social__item">
+                    <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                        <img src="img/vk.svg">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                        <img src="img/youtube.svg">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                        <img src="img/telegram.svg">
+                    </a>
+                </li>
+            </ul>
+            <a class="htmlacademy-logo" href="https://htmlacademy.ru/">
+                <p>HTML Academy</p>
+            </a>
+            <a class="htmlacademy-icon" href="https://htmlacademy.ru/"><img src="img/html-academy-logo.svg"></a>
+        </div>
+    </footer>
 </body>
+
 </html>
