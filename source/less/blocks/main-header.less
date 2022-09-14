@@ -1,19 +1,116 @@
+@tablet-width: 768px;
+@desktop-width: 1200px;
+@mobile-width-only: 767px;
+
 .main-header {
   background: #ffffff;
+  margin: 0 auto;
+  width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    background: #ffffff;
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    background: #ffffff;
+    margin: 0 auto;
+    width: 1440px;
+  }
+}
+
+.main-header__image {
+  position: relative;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__image {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__image {
+    display: none;
+  }
+}
+
+.main-header__logo {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__logo {
+    display: block;
+    position: relative;
+    width: 175px;
+    height: 52px;
+    top: 24;
+    left: 310;
+    background-image: url("../img/logo-tablet.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__logo {
+    display: block;
+    position: relative;
+    width: 202px;
+    height: 59px;
+    top: 53;
+    left: 110;
+    background-image: url("../img/logo-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .main-nav {
-  display: flex;
-  flex-direction: row;
+  width: 320px;
+  height: 264px;
 }
 
-.main-nav__wrapper {
-  width: 1000px;
-  margin: 0 auto;
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: 440px;
+    height: 36px;
+    left: 298px;
+    top: 42px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 478px;
+    height: 40px;
+    left: 852px;
+    top: 69px;
+  }
 }
 
 .main-nav__list {
-  display: flex;
-  justify-content: space-between;
+  display: none;
 }
 
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  }
+}
