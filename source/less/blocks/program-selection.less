@@ -1,51 +1,183 @@
+@tablet-width: 768px;
+@desktop-width: 1200px;
+@mobile-width-only: 767px;
+
 .program-selection {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .program-selection {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-selection {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .program-selection__wrapper {
-  width: 570px;
-  height: 374px;
+  width: 280px;
+  height: 266px;
   padding: 10px;
   margin: 10px;
   background: #f2f2f2;
+}
+
+@media (min-width: @tablet-width) {
+  .program-selection__wrapper {
+    width: 708px;
+    height: 372px;
+    padding: 10px;
+    margin: 10px;
+    background: #f2f2f2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-selection__wrapper {
+    width: 570px;
+    height: 374px;
+    padding: 10px;
+    margin: 10px;
+    background: #f2f2f2;
+  }
 }
 
 .program-selection__weight-loss {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 24px;
+  line-height: 37px;
   color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .program-selection__weight-loss {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-selection__weight-loss {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+  }
 }
 
 .program-selection__intro {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 18px;
   color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .program-selection__intro {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-selection__intro {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
 }
 
 .program-selection__production-catalog {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 16px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
 }
 
+@media (min-width: @tablet-width) {
+  .program-selection__production-catalog {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-selection__production-catalog {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+  }
+}
+
 .program-selection__weight-gain {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
+  font-size: 24px;
+  line-height: 37px;
   color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .program-selection__weight-gain {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-selection__weight-gain {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+  }
 }

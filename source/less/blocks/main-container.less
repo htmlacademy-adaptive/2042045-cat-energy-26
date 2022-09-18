@@ -1,4 +1,22 @@
+@tablet-width: 768px;
+@desktop-width: 1200px;
+@mobile-width-only: 767px;
+
 .main-container {
   margin: 0 auto;
   width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-container {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-container {
+    margin: 0 auto;
+    width: 1200px;
+  }
 }
